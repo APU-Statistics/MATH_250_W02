@@ -1,0 +1,29 @@
+---
+title: "HW 01 - Airbnb"
+subtitle: ""
+author: "YOUR NAME HERE"
+date: "due September 15, 11:59 PM"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_section: false
+    highlight: tango
+    theme: "cosmo"
+link-citations: yes
+---
+
+# Load Packages
+
+```{r load-packages, message = FALSE, warning = FALSE}
+library(tidyverse)
+library(dsbox)
+``` 
+
+
+# Exercise 1
+
+```{r ex-1}
+```
+
+...
