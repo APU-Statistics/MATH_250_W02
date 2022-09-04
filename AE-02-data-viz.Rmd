@@ -54,13 +54,17 @@ Remember that continuing to develop a sound workflow for reproducible data analy
 Paying attention to how this .Rmd is organized and formatted will help you learn best practices for creating your own reports.
 That is, pay attention to how code chunks are labeled, how headers and sub-headers and font changes are used, and how spacing and line breaks are used in the code.
 
+Also keep in mind that you're not just practicing your technical coding skills, but you're also developing your investigative skills as a data scientist - **be curious about the data** and **dig further** into it when your visualizations reveal certain patterns or unusual observations.
+
 ## Exercise 1
 
 Make a histogram to visualize the population density of counties.
 Set the number of bins to 10 and include axes labels and a title.
-- Describe the shape of the distribution.
-- Do there appear to be are any outliers?
-Briefly explain.
+
+-   Describe the shape of the distribution.
+
+-   Do there appear to be are any outliers?
+    Briefly explain.
 
 ```{r hist-pop-density}
 #insert code here
@@ -88,9 +92,12 @@ In your description, include similarities and differences in the patterns across
 ## Exercise 4
 
 Now, let's examine the relationship between the same two variables, using a separate plot for each state.
-- Label the axes and give the plot a title.
-- Add a layer called `geom_smooth` with the argument `se = FALSE` to add a smooth curve fit to the data.
-- Which plot do you prefer - this plot or the plot in Ex 2?
+
+-   Label the axes and give the plot a title.
+
+-   Add a layer called `geom_smooth` with the argument `se = FALSE` to add a smooth curve fit to the data.
+
+-   Which plot do you prefer - this plot or the plot in Ex 2?
 
 ```{r scatter-college-poverty-by-state}
 #insert code here
@@ -101,9 +108,11 @@ Now, let's examine the relationship between the same two variables, using a sepa
 ## Exercise 5
 
 *Do some states have counties that tend to be geographically larger than others?* To explore this question, create side-by-side boxplots of area (`area`) of a county based on state (`state`).
-- Describe what you observe from the plot.
-- Which state has the single largest county?
-How do you know based on the plot?
+
+-   Describe what you observe from the plot.
+
+-   Which state has the single largest county?
+    How do you know based on the plot?
 
 ```{r side-by-side-box}
 #insert code here
@@ -113,9 +122,12 @@ How do you know based on the plot?
 
 ## Exercise 6
 
-*Do some states have a higher percentage of their counties located in a metropolitan area?* Create a segmented bar chart with one bar per state and the fill determined by the distribution of `metro`, whether a county is considered in a metro area.
+*Do some states have a higher percentage of their counties located in a metropolitan area?*
+
+Create a segmented bar chart with one bar per state and the fill determined by the distribution of `metro`, whether a county is considered in a metro area.
 The y axis of the segmented barplot should range from 0 to 1.
-- What do you notice from the plot?
+
+-   What do you notice from the plot?
 
 Note: For this exercise, you should begin with the data wrangling code below.
 We will learn more about data wrangling code next week.
@@ -129,6 +141,23 @@ midwest <- midwest %>%
 #insert code here
 ```
 
+## Exercise 7
+
+What are two more questions you could investigate using this data?
+For each, state the question and produce a visualization to investigate it.
+
+> Question 1 HERE
+
+```{r question1-viz}
+
+```
+
+> Question 2 HERE
+
+```{r question2-viz}
+
+```
+
 ## BONUS
 
 Recreate the plot below.
@@ -137,6 +166,20 @@ Recreate the plot below.
 ![](images/bonus.png)
 
 # Submission
+
+Before submitting, open up your .html in a full window and inspect the following:
+
+-   Check your code for neatness - add spaces and line breaks where appropriate to improve readability
+
+-   Check your visualizations for informative and clean labels and titles
+
+-   Check that you've interpreted each visualization
+
+-   Make sure extraneous warnings and messages are suppressed (e.g. set `warning = FALSE, message = FALSE)`
+
+-   Check that your text responses are visually distinguished
+
+-   Check for overall neatness & organization of the report (e.g. headers, subheaders, use of bullets, font changes)
 
 To submit, you need to export your .html document from RStudio Cloud and then upload it to the AE 02 assignment on Canvas.
 Refer back to [Lab 01](https://kgfitzgerald.github.io/APU_MATH_250/labs/lab-01-hello-r.html) for detailed instructions on how to export and submit your assignment.
